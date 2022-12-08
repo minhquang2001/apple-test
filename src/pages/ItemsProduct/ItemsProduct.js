@@ -1,11 +1,11 @@
 import classNames from "classnames/bind";
 import { Link, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from 'react'
-import { BackgroundMac } from '~/layouts/components/Background/BackgroundProduct'
-import config from "~/config";
+import { BackgroundMac } from 'src/layouts/components/Background/BackgroundProduct'
+import config from "src/config";
 import styles from './ItemsProduct.module.scss'
-import PageLoading from "~/components/Loading/PageLoading";
-import * as categoryApi from "~/services/categoryApi";
+import PageLoading from "src/components/Loading/PageLoading";
+import * as categoryApi from "src/services/categoryApi";
 
 
 const cx = classNames.bind(styles)

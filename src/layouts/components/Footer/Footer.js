@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 import styles from "./Footer.module.scss"
-import config from "~/config";
-import images from "~/assets/images";
+import config from "src/config";
+import images from "src/assets/images";
 // import { SidebarData } from './FooterBarMobile';
 import { faFacebook, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faSortDown, faSortUp } from '@fortawesome/free-solid-svg-icons';

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import config from "~/config";
+import config from "src/config";
 import classNames from "classnames/bind";
 import styles from "./ProductItems.module.scss"
-import HomeLoading from "~/components/Loading/HomeLoading";
+import HomeLoading from "src/components/Loading/HomeLoading";
 
 
 

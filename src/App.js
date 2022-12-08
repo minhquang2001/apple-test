@@ -6,9 +6,9 @@ import classNames from 'classnames/bind';
 
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { publicRoutes } from '~/routes';
-import DefaultLayout from '~/layouts';
-import styles from '~/layouts/DefaultLayout/DefaultLayout.module.scss';
+import { publicRoutes } from 'src/routes';
+import DefaultLayout from 'src/layouts';
+import styles from 'src/layouts/DefaultLayout/DefaultLayout.module.scss';
 
 const cx = classNames.bind(styles);
 

@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import classNames from "classnames/bind";
 import styles from "./ProductItems.module.scss"
-import config from "~/config";
-import HomeLoading from "~/components/Loading/HomeLoading";
+import config from "src/config";
+import HomeLoading from "src/components/Loading/HomeLoading";
 
 const cx = classNames.bind(styles)
 

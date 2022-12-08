@@ -1,22 +1,22 @@
-import config from '~/config';
+import config from 'src/config';
 
 // Layouts
-import { HeaderProduct } from '~/layouts';
+import { HeaderProduct } from 'src/layouts';
 
 // Pages
-import Home from '~/pages/Home';
-// import Iphone from '~/pages/ItemsProduct/Iphone';
-// import Ipad from '~/pages/ItemsProduct/Ipad';
-import ItemsProduct from '~/pages/ItemsProduct/ItemsProduct';
+import Home from 'src/pages/Home';
+// import Iphone from 'src/pages/ItemsProduct/Iphone';
+// import Ipad from 'src/pages/ItemsProduct/Ipad';
+import ItemsProduct from 'src/pages/ItemsProduct/ItemsProduct';
 
 // Single Page
-import SingleProduct from '~/pages/SingleProduct';
+import SingleProduct from 'src/pages/SingleProduct';
 
 // CheckOut
-import CheckOut from '~/pages/Cart/CheckOut';
+import CheckOut from 'src/pages/Cart/CheckOut';
 
 // Not Found
-import NotFound from '~/pages/NotFound';
+import NotFound from 'src/pages/NotFound';
 
 
 

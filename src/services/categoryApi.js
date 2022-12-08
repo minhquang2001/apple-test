@@ -1,4 +1,4 @@
-import httpRequest from "~/utils/httpResquest";
+import httpRequest from "src/utils/httpResquest";
 
 export const categoryApi = async (category) => {
     try {

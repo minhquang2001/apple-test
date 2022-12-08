@@ -11,11 +11,11 @@ import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { addToCart } from './redux/cartSlice';
 
-import * as singleApi from '~/services/singleApi'
+import * as singleApi from 'src/services/singleApi'
 import styles from './SingleProduct.module.scss';
-import { Overview, Specification } from '~/components/OptionProduct';
+import { Overview, Specification } from 'src/components/OptionProduct';
 import NotFound from '../NotFound';
-import SingleLoading from '~/components/Loading/SingleLoading';
+import SingleLoading from 'src/components/Loading/SingleLoading';
 const cx = classNames.bind(styles);
 function SingleProduct() {
     const tabs = [

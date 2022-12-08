@@ -6,11 +6,11 @@ import React, { useEffect, useState, useRef } from 'react';
 import Tippy from '@tippyjs/react/headless';
 import 'tippy.js/dist/tippy.css';
 
-import config from "~/config";
-import images from "~/assets/images";
+import config from "src/config";
+import images from "src/assets/images";
 import styles from './Header.module.scss'
-import { ipads } from "~/assets/data/product";
-import Cart from "~/components/Cart/Cart";
+import { ipads } from "src/assets/data/product";
+import Cart from "src/components/Cart/Cart";
 
 const cx = classNames.bind(styles)
 

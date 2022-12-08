@@ -1,5 +1,5 @@
-import Header from '~/layouts/components/Header';
-import Footer from '~/layouts/components/Footer';
+import Header from 'src/layouts/components/Header';
+import Footer from 'src/layouts/components/Footer';
 
 function HeaderProduct({ children }) {
     return (
