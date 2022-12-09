@@ -48,7 +48,7 @@ function BackgroundProductPage() {
         default:
             category = undefined;
     }
-
+    
 
     // set width responsive
     useEffect(() => {
