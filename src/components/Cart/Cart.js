@@ -57,9 +57,9 @@ function Cart() {
                         <div className={cx('height-cart')}>
                             {cart &&
                                 cart?.map((product, idx) => (
-                                    <Link to={`/cart/${product.id}`} className={cx('product-cart')} key={idx} onClick={ToggleCart}>
-                                        <img className={cx('cart-img')} src={product.image} alt="" />
-                                        <div className={cx('wrapper-cart')}>
+                                    <Link to={`/cart/${product.id}`} className={cx('product-cart')} key={idx} >
+                                        <img className={cx('cart-img')} src={product.image} alt="" onClick={ToggleCart}/>
+                                        <div className={cx('wrapper-cart')} onClick={ToggleCart}>
                                             <div className={cx('name-cart')}>{product.name}</div>
                                             <p className={cx('price-cart')}>
                                                 {product.quantity} x{' '}
