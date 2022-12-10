@@ -43,6 +43,9 @@ function SearchMobile() {
         if (!searchValue.startsWith(' ')) {
             setSearchValue(searchValue);
         }
+        if (searchValue === '') {
+            setError(false)
+        }
     };
     //render list product search demo
     useEffect(() => {
