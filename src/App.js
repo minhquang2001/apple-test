@@ -8,6 +8,7 @@ import classNames from 'classnames/bind';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { publicRoutes } from 'src/routes';
 import DefaultLayout from 'src/layouts';
+import ScrollToTop from './scrollToTop';
 import styles from 'src/layouts/DefaultLayout/DefaultLayout.module.scss';
 
 const cx = classNames.bind(styles);
@@ -36,6 +37,7 @@ function App() {
   }
   return (
     <Router>
+      <ScrollToTop>
       <div className="App">
 
         <Routes>
@@ -67,6 +69,7 @@ function App() {
           </div>
         )}
       </div>
+      </ScrollToTop>
     </Router>
   );
 }

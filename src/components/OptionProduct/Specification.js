@@ -39,7 +39,7 @@ function Specification() {
                     ))}
                 </tbody>
             </table>} */}
-             <p>Coming Soon !!!</p>
+             <p style={{fontSize : '2rem'}}>Coming Soon !!!</p>
         </>
     )
 }

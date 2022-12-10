@@ -60,7 +60,7 @@ function Cart() {
                                     <div className={cx('product-cart')} key={idx} >
                                         <img className={cx('cart-img')} src={product.image} alt="" />
                                         <Link to={`/cart/${product.id}`} className={cx('wrapper-cart')} onClick={ToggleCart}>
-                                            <div className={cx('name-cart')}>{product.name}</div>
+                                            <div className={cx('name-cart')}>{product.name} {product.storage}</div>
                                             <p className={cx('price-cart')}>
                                                 {product.quantity} x{' '}
                                                 {getText(product.price.toLocaleString().concat('đ'))}

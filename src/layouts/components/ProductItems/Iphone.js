@@ -17,7 +17,7 @@ function Iphone() {
         fetch('https://api.levanphuc.asia/api/v1/category/5/groupproducts')
             .then(res => res.json())
             .then(data => {
-                setData(data.data)
+                setData((data.data).reverse())
                 setLoading(false)
             })
     }, [])

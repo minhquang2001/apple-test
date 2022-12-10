@@ -1,21 +1,25 @@
-.wrapper_heading { 
+.wrapper_heading {
     max-width: 1440px;
     margin: 0 auto;
     padding: 16px 0;
 }
+
 .link_page {
     display: flex;
     padding-bottom: 32px;
 }
+
 .link_heading {
     color: var(--primary);
     padding-left: 8px;
     cursor: default;
 }
+
 .heading {
     text-align: center;
     font-size: 4rem;
 }
+
 .wrapper {
     display: block;
     background-color: #fff;
@@ -49,6 +53,9 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    -webkit-overflow-scrolling: touch;
+    touch-action: none;
+    -ms-touch-action: none;
 }
 
 .product-price {
@@ -62,6 +69,7 @@
     .product-name {
         font-size: 1.8rem;
     }
+
     .product-price {
         font-size: 1.6rem;
     }
