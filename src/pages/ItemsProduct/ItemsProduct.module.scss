@@ -48,7 +48,7 @@
     margin: 4px 32px 16px 24px;
     font-size: 2rem;
     font-weight: 700;
-    height: 6rem;
+    height: 5.5rem;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -68,6 +68,7 @@
 @media (max-width: '1270px') {
     .product-name {
         font-size: 1.8rem;
+        height: 5rem;
     }
 
     .product-price {

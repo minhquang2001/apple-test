@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react"
-import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faUser, faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import { faFacebookF, faGithub, faGooglePlusG } from "@fortawesome/free-brands-svg-icons"
@@ -16,13 +15,12 @@ function Contact() {
         Textmessage: '',
     });
     const form = useRef()
-    // const handleChange = (e) => {
-    //     setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-    // };
+    const handleChange = (e) => {
+        setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    };
 
     const sendEmail = (e) => {
         e.preventDefault();
-    
         emailjs.sendForm('service_s1y6hnj', 'template_d595nvr', form.current, '1UHj-0TlcGw2KhRIC')
           .then((result) => {
               console.log(result.text);
@@ -44,8 +42,8 @@ function Contact() {
                         spellCheck="false"
                         placeholder="Name"
                         name="Name"
-                        
-                        // onChange={handleChange}
+
+                        onChange={handleChange}
                          />
                     <FontAwesomeIcon icon={faUser} className={cx("fas", "fa-user")} />
                 </div>
@@ -56,7 +54,7 @@ function Contact() {
                         spellCheck="false"
                         placeholder="Email"
                         name="Email"
-                        // onChange={handleChange} 
+                        onChange={handleChange} 
                         />
                     <FontAwesomeIcon icon={faEnvelope} className={cx("fas", "fa-envelope")} />
                 </div>
@@ -68,7 +66,7 @@ function Contact() {
                         rows="10"
                         placeholder="Message....."
                         name="Textmessage"
-                        // onChange={handleChange} 
+                        onChange={handleChange} 
                         >
 
                         </textarea>
