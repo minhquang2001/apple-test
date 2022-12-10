@@ -22,7 +22,7 @@ function Header() {
                         <Link to={config.routes.mac} className={cx('list-product')}>Macbook</Link>
                         <Link to={config.routes.watch} className={cx('list-product')}>Watch</Link>
                         <Link to={config.routes.loudspeaker} className={cx('list-product')}>Âm Thanh</Link>
-                        <Link to={config.routes.home} className={cx('list-product')}>Dịch Vụ</Link>
+                        <Link to={config.routes.contact} className={cx('list-product')}>Liên hệ</Link>
                     </div>
                     <div className={cx('box-icon')}>
                         <div className={cx('wrap-icon')}>
@@ -43,7 +43,7 @@ function Header() {
                     <Link to={config.routes.mac} className={cx('list-product')}>Macbook</Link>
                     <Link to={config.routes.watch} className={cx('list-product')}>Watch</Link>
                     <Link to={config.routes.loudspeaker} className={cx('list-product')}>Âm Thanh</Link>
-                    <Link to={config.routes.home} className={cx('list-product')}>Dịch Vụ</Link>
+                    <Link to={config.routes.contact} className={cx('list-product')}>Liên hệ</Link>
                 </div>
             </div>
         </>

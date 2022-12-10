@@ -13,10 +13,11 @@ import ItemsProduct from 'src/pages/ItemsProduct/ItemsProduct';
 import SingleProduct from 'src/pages/SingleProduct';
 
 // CheckOut
-import CheckOut from 'src/pages/Cart/CheckOut';
+import CheckOut from 'src/pages/CheckOut';
 
 // Not Found
 import NotFound from 'src/pages/NotFound';
+import Contact from 'src/pages/Contact';
 
 
 
@@ -31,6 +32,8 @@ const publicRoutes = [
     { path: config.routes.mac, component: ItemsProduct, layout: HeaderProduct },
     { path: config.routes.watch, component: ItemsProduct, layout: HeaderProduct },
     { path: config.routes.loudspeaker, component: ItemsProduct, layout: HeaderProduct },
+    { path: config.routes.contact, component: Contact, layout: HeaderProduct },
+
 
     { path: config.routes.checkout, component: CheckOut, layout: HeaderProduct },
 

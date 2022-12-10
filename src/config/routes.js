@@ -5,6 +5,7 @@ const routes = {
     mac: '/macs',
     watch: '/watchs',
     loudspeaker: '/loudspeakers',
+    contact: '/contact',
     checkout: '/checkout',
     notfound: '*',
 
