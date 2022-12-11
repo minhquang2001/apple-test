@@ -24,6 +24,7 @@
         "react": "^18.2.0",
         "react-app-rewired": "^2.2.1",
         "react-dom": "^18.2.0",
+        "react-form-with-constraints": "^0.19.1",
         "react-loading-skeleton": "^3.1.0",
         "react-quill": "^2.0.0",
         "react-redux": "^8.0.5",

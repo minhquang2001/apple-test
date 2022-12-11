@@ -34,7 +34,6 @@
 .form-items .input.message {
     height: 125px;
     border-radius: 15px;
-    margin-bottom: 30px;
     padding: 15px 15px;
     resize: none;
 }
@@ -56,6 +55,10 @@
 
 .form-items {
     position: relative;
+    p {
+        color: red;
+        margin-bottom: 12px;
+    }
 }
 
 .form-items .fas {
