@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Swal from "sweetalert2";
 import classNames from "classnames/bind";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
@@ -53,9 +54,28 @@ function CheckOut() {
       if (Object.keys(formErrors).length === 0 && isSubmit) {
         try {
           await axios.post("https://api.levanphuc.asia/api/v1/order", dataCart);
-          dispatch(removeAllItem());
-          navigate("/");
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Success",
+            showConfirmButton: false,
+            timer: 1500,
+            timerProgressBar: true,
+          });
+          setTimeout(() => {
+            dispatch(removeAllItem());
+            navigate("/");
+          }, 1500);
         } catch (err) {
+          Swal.fire({
+            position: "center",
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong!",
+            showConfirmButton: false,
+            timer: 1500,
+            timerProgressBar: true,
+          });
           console.log(err);
           setError(true);
         }
@@ -209,7 +229,9 @@ function CheckOut() {
                         Đặt hàng
                       </div>
                     </div>
-                    {error && "Something went wrong!"}
+                    {error && (
+                      <p style={{ color: "red" }}>Something went wrong!</p>
+                    )}
                   </div>
                 </form>
               </div>

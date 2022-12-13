@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
+import Swal from "sweetalert2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
@@ -40,9 +41,26 @@ function Contact() {
         .then(
           (result) => {
             setFormValues(initialValues);
+            Swal.fire({
+              position: "center",
+              icon: "success",
+              title: "Success",
+              showConfirmButton: false,
+              timer: 1500,
+              timerProgressBar: true,
+            });
             console.log(result.text);
           },
           (error) => {
+            Swal.fire({
+              position: "center",
+              icon: "error",
+              title: "Oops...",
+              text: "Something went wrong!",
+              showConfirmButton: false,
+              timer: 1500,
+              timerProgressBar: true,
+            });
             console.log(error.text);
           }
         );

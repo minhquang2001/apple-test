@@ -256,7 +256,6 @@ function SingleProduct() {
                         )}
                       </div>
                     ))}
-
                   {/* Check product have screen-size */}
                   {product.options &&
                     product.options.map((option, idx) => (
