@@ -15,7 +15,7 @@ const cx = classNames.bind(style);
 function CheckOut() {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
-  // console.log(cart)
+  console.log(cart);
 
   const arrayListProduct = cart?.map((product) => ({
     productDetailId: product.id,
@@ -208,7 +208,7 @@ function CheckOut() {
                             />
                             <div className={cx("wrapper-cart")}>
                               <div className={cx("name-cart")}>
-                                {product.name}
+                                {product.name} {product.storage}
                               </div>
                               <p className={cx("price-cart")}>
                                 {product.quantity} x{" "}
